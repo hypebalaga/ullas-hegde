@@ -153,6 +153,7 @@ body {
   color: var(--black-coral);
   font-size: 1.6rem;
   line-height: 1.7;
+  overflow-y: scroll;
 }
 
 body.nav-active {
@@ -187,6 +188,7 @@ body.nav-active {
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-top: 10px;
 }
 
 .social-link {
@@ -494,7 +496,9 @@ body.nav-active {
   color: var(--white);
   margin-block: 24px 36px;
 }
-
+.wrapper {
+  margin-bottom: 130px;
+}
 .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
