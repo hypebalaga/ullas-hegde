@@ -9,7 +9,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 :root {
   /**
    * colors
@@ -141,12 +141,14 @@ address {
 }
 
 html {
-  font-family: var(--ff-manrope);
+  font-family: "Ubuntu", sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   background-color: var(--white);
   color: var(--black-coral);
   font-size: 1.6rem;
@@ -276,7 +278,29 @@ body.nav-active {
   background-color: var(--light-gray);
   overflow: hidden;
 }
-
+.modal-content {
+  border: none;
+  border-radius: 1.2rem;
+}
+.close {
+  color: white;
+  line-height: 2;
+  opacity: 1;
+}
+.modal-footer {
+  border-top: 0;
+  padding: 4px 10px;
+}
+.close:hover {
+  color: white;
+  outline: none;
+  line-height: 2;
+  opacity: 1;
+}
+.modal-header {
+  color: white;
+  background-color: #372b70;
+}
 .img-cover {
   width: 100%;
   height: 100%;
@@ -284,8 +308,8 @@ body.nav-active {
 }
 
 .section-subtitle {
-  font-size: var(--fs-7);
-  text-transform: uppercase;
+  font-size: 30px;
+  /* text-transform: uppercase; */
   color: var(--violet-blue-crayola);
   font-weight: var(--fw-700);
   margin-block-end: 16px;
@@ -296,6 +320,13 @@ body.nav-active {
   gap: 25px;
 }
 
+.btn-submit {
+  color: white;
+  background: #372b70;
+  padding: 9px 11px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
 .w-100 {
   width: 100%;
 }
@@ -306,6 +337,7 @@ body.nav-active {
 
 .header .btn {
   display: none;
+  margin-top: 0;
 }
 
 .header {
@@ -391,6 +423,9 @@ body.nav-active {
 
 .nav-close-btn {
   background-color: var(--white_a8);
+  position: absolute;
+  top: 20px;
+  right: 5px;
   color: var(--white);
   font-size: 2rem;
   padding: 6px;
@@ -888,16 +923,34 @@ body.nav-active {
     padding: 40px;
   }
 }
-
+.form-control:focus {
+  border: none;
+}
 /**
  * responsive for large than 768px screen
  */
-
+label {
+  float: left;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header .btn {
+    margin-top: 7px;
+    display: block;
+    margin-inline-start: auto;
+    padding: 4px 10px;
+  }
+  .navbar-list {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   /**
    * CUSTOM PROPERTY
    */
-
+  label {
+    float: left;
+  }
   :root {
     /**
      * spacing
@@ -923,9 +976,13 @@ body.nav-active {
    */
 
   .header .btn {
+    /* margin-top: 7px; */
     display: block;
     margin-inline-start: auto;
-    padding: 8px 20px;
+    padding: 4px 10px;
+  }
+  .navbar-list {
+    text-align: center;
   }
 
   .header.active .btn {
@@ -1227,7 +1284,7 @@ label {
 }
 li a:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 /* .nav-contact {
   color: white !important;
@@ -1247,5 +1304,8 @@ li a:hover {
     padding: 20px;
     top: 80%;
     left: 75%;
+  }
+  label {
+    float: left;
   }
 }
