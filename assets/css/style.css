@@ -441,10 +441,6 @@ body.nav-active {
   background-color: var(--white_a12);
 }
 
-.navbar-list {
-  margin-block-end: auto;
-}
-
 .navbar-link {
   font-weight: var(--fw-700);
   padding-block: 6px;
@@ -791,6 +787,7 @@ body.nav-active {
 }
 
 .project-card .card-text {
+  color: var(--charcoal);
   margin-block: 16px 20px;
 }
 
@@ -942,6 +939,7 @@ label {
   }
   .navbar-list {
     text-align: center;
+    margin-top: -90px;
   }
 }
 @media (min-width: 768px) {
@@ -1286,12 +1284,10 @@ li a:hover {
   text-decoration: none;
   color: white;
 }
-/* .nav-contact {
-  color: white !important;
-} */
+
 .nav-contact:hover {
   cursor: pointer;
-  color: black !important;
+  color: white !important;
 }
 
 .modal-title {
