@@ -242,12 +242,25 @@ body.nav-active {
   font-weight: var(--fw-700);
   border: 2px solid var(--white);
   max-width: max-content;
-  padding: 12px 28px;
+  padding: 10px 28px;
   border-radius: var(--radius-pill);
   transition: var(--transition-1);
   will-change: transform;
 }
 
+.card-text:last-child {
+  color: var(--charcoal);
+}
+.btn:hover {
+  color: var(--white);
+}
+.btn-contact {
+  color: #372b70;
+  background: var(--white);
+}
+.btn-contact:hover {
+  color: #372b70;
+}
 .btn:is(:hover, :focus-visible) {
   transform: translateY(-4px);
 }
@@ -916,8 +929,8 @@ body.nav-active {
   }
 
   .header.active .btn {
-    background-color: var(--violet-blue-crayola);
-    border-color: var(--violet-blue-crayola);
+    background-color: #372b70;
+    border-color: #372b70;
     color: var(--white);
   }
 
@@ -1174,17 +1187,18 @@ body.nav-active {
 
 .icon-bar {
   position: fixed;
-  padding: 20px;
+  padding: 16px;
   top: 80%;
-  left: 85%;
+  z-index: 999;
+  left: 92%;
 }
 
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
-  height: 80px;
-  width: 80px;
+  padding: 4px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   transition: all 0.3s ease;
   color: white;
@@ -1198,6 +1212,33 @@ body.nav-active {
 .facebook {
   background: #25d366;
   color: white;
+}
+ul {
+  text-decoration: none;
+  color: white;
+}
+.form-control {
+  font-size: 1.25rem;
+  height: 35px;
+}
+label {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+/* .nav-contact {
+  color: white !important;
+} */
+.nav-contact:hover {
+  cursor: pointer;
+  color: black !important;
+}
+
+.modal-title {
+  font-size: 2.25rem;
 }
 
 @media (max-width: 900px) {
