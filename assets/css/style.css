@@ -163,7 +163,15 @@ body.nav-active {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
+.read-more {
+  display: flex;
+  justify-content: center;
+}
+.btn-read {
+  margin:20px;
+  background-color: #757ed1;
+  color: white;
+}
 ::-webkit-scrollbar-track {
   background-color: hsl(0, 0%, 98%);
 }
